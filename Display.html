@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Thanks</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"  />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script src="asset/jquery.js"></script>
+    <script src="asset/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="asset/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    
+    <script>
+function validateForm() {
+  var x = document.forms["myForm"]["name"].value;
+    var y = document.forms["myForm"]["email"].value;
+    var q = document.forms["myForm"]["day"].value;
+    var s = document.forms["myForm"]["message"].value;
+    
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+      if (y == "") {
+    alert("Email must be filled out");
+    return false;
+  }
+      if (q == "") {
+    alert("Day must be filled out");
+    return false;
+  }
+
+      if (s == "") {
+    alert("Message box must be filled out");
+    return false;
+  }
+    
+}
+        
+      
+function setData(){
+    if(typeof(localStorage) != "undefined"){
+        document.getElementById("show1").innerHTML = localStorage.name;
+    }
+       if(typeof(localStorage) != "undefined"){
+        document.getElementById("show2").innerHTML = localStorage.email;
+    }
+         if(typeof(localStorage) != "undefined"){
+        document.getElementById("show3").innerHTML = localStorage.products;
+    }
+         if(typeof(localStorage) != "undefined"){
+        document.getElementById("show4").innerHTML = localStorage.day;
+    }
+         if(typeof(localStorage) != "undefined"){
+        document.getElementById("show5").innerHTML = localStorage.month;
+    }
+}
+</script>
+    
+</head>
+
+<body onload="setData()">
+
+    <header>
+    <nav class="navbar navbar-expand-md fixed-top ">
+        <h1 class="navbar-brand" href="index.html">Petite Treats</h1>
+        <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">Gallery</a>
+                </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="specials.html">Specials</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ContactUS.html">Contact US</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    </header>
+    
+    
+<br>
+
+    <main>
+        
+        <div class="container">
+            <h3>Thank you for signing up for the Petite Treats Weekly newsletter.
+</h3><br><br>
+            <h4>We have added the following information to our files regarding your interests:</h4>
+            <div class="output">
+            <p>Name:</p> <p id="show1"></p>
+            <p>Email:</p> <p id="show2"></p>
+            <p>Product interests:</p> <p id="show3"></p>
+            <p>Birthday:</p> <p id="show4"><p id="show5"></p>
+</div></div>
+
+    </main>
+
+     <footer class="page-footer font-small">
+
+
+        <div class="footer-copyright">Contact: 0455 5555 5555&nbsp; &nbsp; Catering: 0433 3333 3333 123 &nbsp; &nbsp;Prize Lane, Kirwan, QLD
+  </div>
+ 
+
+
+</footer>
+
+</body>
+
+</html>

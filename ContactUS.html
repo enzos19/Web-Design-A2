@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Contact Us</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"  />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script src="asset/jquery.js"></script>
+    <script src="asset/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="asset/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    
+    <script>
+function validateForm() {
+  var x = document.forms["myForm"]["name"].value;
+    var y = document.forms["myForm"]["email"].value;
+    var q = document.forms["myForm"]["day"].value;
+    var s = document.forms["myForm"]["message"].value;
+    
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+      if (y == "") {
+    alert("Email must be filled out");
+    return false;
+  }
+      if (q == "") {
+    alert("Day must be filled out");
+    return false;
+  }
+
+      if (s == "") {
+    alert("Message box must be filled out");
+    return false;
+  }
+    
+}
+        
+        function submitForm(){
+    if(typeof(localStorage) != "undefined"){
+        localStorage.name = document.getElementById("name").value;
+    }
+                if(typeof(localStorage) != "undefined"){
+        localStorage.email = document.getElementById("email").value;
+    }
+                if(typeof(localStorage) != "undefined"){
+        localStorage.products = document.getElementById("products").value;
+    }
+                if(typeof(localStorage) != "undefined"){
+        localStorage.day = document.getElementById("day").value;
+    }
+                if(typeof(localStorage) != "undefined"){
+        localStorage.month = document.getElementById("month").value;
+    }
+    document.getElementById("form").submit();
+}
+</script>
+    
+</head>
+
+<body>
+
+    <header>
+    <nav class="navbar navbar-expand-md fixed-top ">
+        <h1 class="navbar-brand" href="index.html">Petite Treats</h1>
+        <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">Gallery</a>
+                </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="specials.html">Specials</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ContactUS.html">Contact US</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    </header>
+    
+    
+<br>
+
+    <main>
+        
+        <div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="contact-form" style="width: 100%;">
+                <div class="card-header" style="background-color:#353131 !important; color: beige;"> Newsletter Signup.
+                </div>
+                <div class="card-body">
+                    <form action="display.html" if="form" name="myForm" onsubmit="return validateForm()" method="GET">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Enter name" >
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email address</label>
+                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" >
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="products">Product Interest</label>
+                            <select id="product" class="form-control" name="product">
+    <option value="Donut">Donut</option>
+    <option value="Rasberry">Rasberry</option>
+    <option value="Custard Tart">Custard Tart</option>
+    <option value="Randy Tart">Randy Tart</option>
+  </select>
+                        </div>
+                          <div class="form-group">
+                  <label for="day">Day</label>
+
+<input type="number" id="day" name="day"
+       min="1" max="31">
+                        </div>
+                        
+                           <div class="form-group">
+            <label for="Month">Month</label>
+                            <select id="Month" class="form-control" name="Month">
+    <option selected value='Janaury'>Janaury</option>
+    <option value='February'>February</option>
+    <option value='March'>March</option>
+    <option value='April'>April</option>
+    <option value='May'>May</option>
+    <option value='June'>June</option>
+    <option value='July'>July</option>
+    <option value='August'>August</option>
+    <option value='September'>September</option>
+    <option value='October'>October</option>
+    <option value='November'>November</option>
+    <option value='December'>December</option>
+    </select> 
+                        </div>
+                          <div class="form-group">
+                            <label for="message">Enquiry</label>
+                            <textarea class="form-control" id="message" rows="4"></textarea>
+                        </div>
+                        <div class="mx-auto">
+                        <button type="submit" class="btn btn-primary text-center" onclick="submitForm()">Submit</button></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-4">
+            <div class=" bg-light mb-3" style="width: 100%;">
+                <div class="card-header" style="background-color:#353131 !important; color: beige; "><i class="fa fa-home"></i> Reach to us</div>
+                <div class="card-body">
+<br>
+   <form>
+                        <div class="form-group">
+                            <label for="email">Subscribe to us</label>
+                            <br>
+                            <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Enter Your Email Address">
+                        </div>
+                    
+                        <div class="mx-auto">
+                        <button type="Subscribe" class="btn btn-primary text-center">Subscribe</button></div>
+                    </form>
+                    <br><br>
+                    <h3>Address</h3>
+                      <p>21 Baker Street, Singapore</p>
+                    <p>75008</p>
+                    <p>Email : email@example.com</p>
+                    <p>Tel. +33 12 56 11 51 84</p>
+                    
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+    </main>
+
+     <footer class="page-footer font-small">
+
+
+        <div class="footer-copyright">Contact: 0455 5555 5555&nbsp; &nbsp; Catering: 0433 3333 3333 123 &nbsp; &nbsp;Prize Lane, Kirwan, QLD
+  </div>
+ 
+
+
+</footer>
+
+</body>
+
+</html>

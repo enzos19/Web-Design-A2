@@ -1,0 +1,363 @@
+
+body {
+
+}
+
+nav {
+
+
+    background-color: #f27618;
+    color: #ffffff;
+}
+
+nav h1 {
+
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-left: 15%;
+}
+
+nav div {
+    margin-left: 40%;
+}
+
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+
+body {
+    background-image: url(../images/img1.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+
+.container {
+    width: 80%;
+    margin: 65px auto;
+
+   
+}
+
+.title {
+    text-align: center;
+    font-weight: bold;
+    padding: 15px;
+    color: #f27618;
+    font-size: 42px;
+}
+
+.p-italic {
+    text-align: center;
+    font-style: italic;
+    padding: 10px;
+}
+
+.heading {
+    text-align: center;
+    color: #f27618;
+    text-transform: uppercase;
+}
+
+
+.card {
+    transition: .3s;
+
+
+}
+
+
+.card:hover {
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+
+span {
+    color: green;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.testimonials {
+    margin: 10px auto;
+    width: 80%;
+}
+
+.testimony {
+  
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 10px;
+    padding: 5px;
+}
+
+.testimony img {
+    width: 50vw;
+    height: 20vh;
+    border-radius: 100px;
+    overflow: hidden;
+    object-fit: cover;
+    margin: 10px;
+}
+
+.testimony p {
+    text-align: center;
+    margin-top: 15px;
+    quotes: "“" "”" "‘" "’";
+}
+
+.testimony p::before {
+    content: open-quote;
+    color: #f27618;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.testimony p::after {
+    content: close-quote;
+    color: #f27618;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.newsletter {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+
+.newsletter input {
+    width: 100%;
+}
+
+.newsletter button {
+    background-color: #f27618;
+    color: white;
+    border: 2px solid #f27618;
+}
+
+
+
+.customers {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: 25px auto;
+}
+
+.customers figure {
+    margin: 8px;
+}
+
+.customers figure figcaption {
+    text-align: center;
+    font-weight: bold;
+}
+
+.customers figure img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+}
+
+.item {
+    width: 80%;
+    margin: auto;
+}
+
+.item img {
+    height: 30vh;
+    padding: 10px
+}
+
+.item figcaption {
+    padding: 10px;
+}
+
+.products a {
+    text-decoration: none;
+    color: black;
+    cursor: default;
+}
+
+.col-2,
+.search-bar,
+.filter-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.fm-bg {
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.form {
+    padding: 30px;
+    width: 400px;
+    height: fit-content;
+}
+
+.form h1 {
+    padding: 8px 0;
+    font-weight: 100;
+    text-align: center;
+    color: #f27618
+}
+
+.form-control {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    position: relative;
+}
+
+.form-control label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+input {
+    border-radius: 5px;
+    border: 2px solid #f0f0f0;
+    display: block;
+    font-size: 14px;
+    width: 100%;
+    padding: 10px;
+}
+
+.form-control i {
+    position: absolute;
+    top: 35px;
+    right: 10px;
+    visibility: hidden;
+}
+
+.form button {
+    background-color: #f27618;
+    color: white;
+    border: 2px solid #f27618;
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    margin: 5px 0;
+    padding: 10px;
+}
+
+.form-control small {
+    position: absolute;
+    visibility: hidden;
+    bottom: -5px;
+    left: 0;
+    font-style: italic;
+}
+
+.form-control.success input {
+    border-color: green;
+}
+
+.form-control.success i.fa-check-circle {
+    color: green;
+    visibility: visible;
+}
+
+.form-control.error input {
+    border-color: red;
+}
+
+.form-control.error small {
+    visibility: visible;
+    color: red;
+}
+
+.form-control.error i.fa-exclamation-circle {
+    color: red;
+    visibility: visible;
+}
+
+#line {
+    width: 0.2px;
+    height: 70vh;
+    background-color: #f27618;
+    opacity: .8;
+    margin-top: 50px;
+}
+
+footer {
+    background-color: #f27618;
+    color: #ffffff;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+    bottom: 0;
+    position: fixed;
+}
+
+
+.contact-form {
+    background-color: whitesmoke;
+}
+
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .prev,
+    .next,
+    .text {
+        font-size: 11px
+    }
+}
+
+.faq {
+    margin-top: 50px;
+}
